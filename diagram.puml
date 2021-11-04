@@ -1,0 +1,11 @@
+@startuml
+queue payment
+queue eur
+queue czk
+
+queue audit
+
+payment --|> eur: payment.eur
+payment --|> czk: payment.czk
+payment --|> audit: payment.#
+@enduml
